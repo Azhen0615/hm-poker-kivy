@@ -31,16 +31,3 @@
 pip install buildozer cython==0.29.36
 buildozer android debug
 ```
-
-## 数据
-
-- App 数据保存在应用私有目录的 `state.json`。
-- 设置 → 导入备份，可读取原 HTML 版导出的 JSON（`current` / `archive` 结构会自动识别）。
-- 导出备份会生成 JSON 并调起系统分享。
-
-## 说明
-
-- Kivy 界面是“功能优先”版，视觉不可能和 HTML 的绒布/金饰完全一样。
-- Kivy APK 体积通常 30–40MB，做不到 10MB；10MB 是原 HTML 加固包的量级。
-- 安装包用 debug 签名，适合自己安装；要上架需换 release 签名。
-- 没有服务器同步；数据在本机。
